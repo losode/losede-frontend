@@ -61,7 +61,7 @@ class SignUp extends React.Component{
              <h2 className="text-center bold">Create your Account </h2>
               <p className="text-center">Registration is easy</p>
 
-          <div className ='d-flex justify-content-center form-group'>
+          <div className ='d-flex justify-content-center form-group' id="signup">
             <div className="row">
               <div className="col">
               <label>

@@ -21,7 +21,7 @@ import CurrencyConverter from './components/Converter'
 import Facebook from './components/Facebook'
 import Cart from './components/Cart'
 import CustomerHelp from './Customers/CustomerHelp.js'
-
+import AboutLosode from './components/AboutLosode'
 import {BrowserRouter as Router, Switch,Redirect,Route} from 'react-router-dom'
 
 class App extends React.Component{
@@ -185,6 +185,7 @@ class App extends React.Component{
                <Route path ='/customer/dashboard/orders' component ={MyOrders}/>
                <Route path ='/customer/dashboard/returns' component ={MyReturns}/>
                <Route path ='/customer/dashboard/help' component ={CustomerHelp}/>
+               <Route path='/aboutlosode' component={AboutLosode}/>
              </Switch>
         </Router>
         </AuthContext.Provider>
