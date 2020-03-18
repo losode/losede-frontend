@@ -60,7 +60,7 @@ One of our main goals as a company is to connect retailers who have great invent
 
 As an innovator in African online fashion, here at Losode we are constantly working to remain your top choice when it comes to buying stylish yet affordable clothing as well as keep you style savvy and fashion informed. Our team here at Losode, from the customer service specialists to the shipping department to the designers themselves, is looking forward to serving your needs for top fashion clothes, shoes, and accessories. Thank you for shopping at Losode!
     <div>
-    <button className ='mt-4 btn btn-primary joinUs'>Join Us</button>
+    <p className ='mt-4 btn btn-primary joinUs'><a href="">Join Us</a></p>
     </div>
 
                </p>

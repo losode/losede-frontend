@@ -24,12 +24,22 @@ h1{
 }
 
 .joinUs{
-    background-color: #800000;
-    border-color: #800000;
+    background-color: #fff;
+    border: 2px solid #800000;
     width: 150px !important;
-    padding: 5px 25px 5px 25px;
+    padding: 5px 25px 5px 25px !important;
     font-size: 16px;
 }
+
+.joinUs > a{
+    color: #800000;
+    font-weight: 700;
+}
+
+.joinUs > a:hover{
+    color: #fff;
+}
+
 
 .joinUs:hover{
     background-color: #6f1616;
