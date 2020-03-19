@@ -3,6 +3,7 @@ import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './SCSS/App.scss';
 import './SCSS/responsiveness.scss'
+import SellerDashboard from './Seller/SellerDashboard'
 import CustomerDashboard from'./Customers/CustomerDashboard'
 import MainNavbar from './components/MainNavbar';
 import SubMainNavbar from './components/SubMainNavbar';

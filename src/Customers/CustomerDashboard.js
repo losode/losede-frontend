@@ -65,16 +65,22 @@ class CustomerDashBoard extends React.Component{
         
 		return(
 			<React.Fragment>
-				<CustomerSideBar handleDashboard={this.handleDashboard} handleMyReturns={this.handleMyReturns} handleNeedhelp={this.handleNeedhelp} handleOrders= {this.handleOrders}/>
+				<CustomerSideBar handleDashboard={this.handleDashboard}
+				 handleMyReturns={this.handleMyReturns}
+				 handleNeedhelp ={this.handleNeedhelp}
+				 handleOrders ={this.handleOrders}/>
 				<p>Welcome User</p>
 				
 			 <AuthContext.Consumer>
+                  
 				 {(data)=>{
-					 if(this.state.myreturnsClicked){
-						 return(
-							<MyReturns/>
-						 )
-					 }
+					    if(this.state.myreturnsClicked){
+							return(
+								<MyReturns/>
+							 )	
+						}
+						 
+					
 					 if(this.state.ordersClicked){
 						return(
 							<MyOrders/>
