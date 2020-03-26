@@ -1,3 +1,8 @@
+.welcome-user{
+    font-size: 20px;
+    font-weight: 700;
+}
+
 .sidebar-menu > li a {
     color: #000
 }
@@ -8,9 +13,13 @@ li a:hover{
 }
 
 .dashboard{
-    height: 500px !important;
+    height: 600px !important;
+    padding: 20px 0;
 }
 
+.help-components{
+    padding: 50px 0;
+}
 .flex-containers {
     display: flex;
     flex-direction: center;
@@ -20,12 +29,29 @@ li a:hover{
   
   .flex-containers > div {
     background-color: #f1f1f1;
-    width: 300px;
+    width: 250px;
     height: 150px;
     margin: 10px;
+    padding: 25px 0;
     text-align: center;
-    line-height: 75px;
     font-size: 30px;
+  }
+
+  .order-box > a {
+      color: #000;
+  }
+
+  .order-box > a:hover{
+      color: #800000;
+      font-weight: 700;
+      background-color: none;
+//       -webkit-box-shadow: 5px 1px 83px 7px rgba(0,0,0,0.56);
+// -moz-box-shadow: 5px 1px 83px 7px rgba(0,0,0,0.56);
+// box-shadow: 5px 1px 83px 7px rgba(0,0,0,0.56);
+  }
+
+  .help-icons{
+      width: 30px;
   }
 
 @media only screen and (max-width: 768px) {
