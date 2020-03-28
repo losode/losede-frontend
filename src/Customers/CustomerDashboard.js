@@ -11,6 +11,7 @@ import CustomerSideBar from './CustomerSideBar'
 import Footer from '../components/Footer'
 
 
+import './Customers.scss'
 class CustomerDashBoard extends React.Component{
 	constructor(props){
 		super(props)

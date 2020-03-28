@@ -30,7 +30,7 @@ class CustomerSideBar extends React.Component{
           <div class="d-flex justify-content-center">
           
           <ul class="sidebar-menu">
-          <p class="">Welcome Isaac Orija</p>
+          <p class="welcome-user">Welcome Isaac Orija</p>
            <li onClick ={this.handleDashboard}><Link to ='/customer/dashboard'>Dashboard</Link></li>  
            <li onClick ={this.handleOrders}><Link to ='/customer/dashboard/orders'>Orders</Link></li>  
            <li onClick ={this.handleMyReturns}><Link to ='/customer/dashboard/returns'>My Returns </Link></li> 
