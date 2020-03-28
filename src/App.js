@@ -192,10 +192,7 @@ class App extends React.Component{
                <Route path ='/customer/dashboard/returns' npm icomponent ={MyReturns}/>
                <Route path ='/customer/dashboard/help' component ={CustomerHelp}/>
                <Route path='/aboutlosode' component={AboutLosode}/>
-<<<<<<< HEAD
                <Route path ='/customer/checkout' component ={CheckoutForm}/>
-=======
->>>>>>> c7fe23600172b9b9560bdfd8e94ef611e1ecbe39
              </Switch>
         </Router>
         </AuthContext.Provider>

@@ -70,10 +70,10 @@ class DeliveryAddress extends React.Component{
                         <div className ='col-md-6 form-group'>
                             <label>
                                City
-                                <input type ='text' name ='lastname'
-                                placeholder ='Enter your Lastname'
+                                <input type ='text' name ='city'
+                                placeholder ='Enter your City Name'
                                 onChange ={this.props.handleChange}
-                                value ={this.props.lastname}
+                                value ={this.props.city}
                                 className ='form-control'
                                 />
                             </label>
