@@ -1,66 +1,80 @@
 import React from 'react'
 import DeliveryAddress from './DeliveryAddress'
-import OrderSuccessful from './OrderSuccessful'
 import PaymentMethod from './PaymentMethod'
 
 class CheckoutForm extends React.Component{
     constructor(props){
         super(props)
         this.state ={
-            currentStep:1,
+            step:1,
             firstname:'',
             lastname :'',
             email:'',
             phone:'',
             address:'',
             country:'',
-            city:''
+            city:'',
+            checked:false,
+            payment:''
 
         }
         this.handleChange = this.handleChange.bind(this)
         this.handleSubmit = this.handleSubmit.bind(this)
-        this._next = this._next.bind(this)
-        this._previous = this._previous.bind(this)
-    }
+        this.handleCheckBox = this.handleCheckBox.bind(this)
+        this.handleRadioButton = this.handleRadioButton.bind(this)
 
+    }
+  handleSubmit(e){
+      e.preventDafault()
+      alert('order created')
+  }
     handleChange(e){
         this.setState({[e.target.name]:e.target.value})
     }
 
-    _next(){
-        let currentStep = this.state.currentStep
-        {/*if the current step is one or two, then add one on next button click */}
-        currentStep = currentStep >= 2 ? 3: currentStep +1
-        this.setState({currentStep})
+    handleRadioButton(e){
+        this.setState({
+            payment:e.target.value
+        })
     }
 
-    _previous(){
-        let currentStep = this.state.currentStep
-         {/*if the current step is 2 or 3, then subtract  one on a previous button click */}
-       currentStep = currentStep <= 1 ? 1:currentStep -1
-       this.setState({currentStep})
+    handleCheckBox(e){
+        this.setState({checked:!this.state.checked})
+    }
+
+    nextStep = ()=> {
+        let step = this.state.step
+        this.setState({step:step+1})
+    }
+
+    previousStep =()=>{
+        let step = this.state.step
+       this.setState({step:step-1})
     }
   
-    
     render(){
-        return(
-            <React.Fragment>
-               <DeliveryAddress 
-               currentStep={this.state.currentStep}
-               handleChange={this.handleChange}
-                firstname ={this.state.firstname}
-                lastname ={this.state.lastname}
-                email ={this.state.email}
-                address={this.state.address}
-                phone ={this.state.phone}
-                city ={this.state.city}
-
-               />
-               <PaymentMethod/>
-               <OrderSuccessful/>
-
-            </React.Fragment>
-        )
+        const {step} = this.state
+        const {firstname,lastname,email,address,city,phone,checked,payment} = this.state
+        const values = {firstname,payment,lastname,email,address,city,phone,checked}
+        switch(step){
+            case 1:
+                return(
+                    <DeliveryAddress nextStep ={this.nextStep}
+                     handleChange={this.handleChange}
+                     handleCheckBox = {this.handleCheckBox}
+                     values ={values}/>
+                )
+            case 2:
+                return(
+                    <PaymentMethod nextStep ={this.nextStep}
+                     previousStep={this.previousStep}
+                     values ={values} handleCheckBox={this.handleRadioButton}
+                      />
+                )
+ 
+            
+        }
+        
     }
 }
 

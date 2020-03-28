@@ -11,6 +11,7 @@ import CategoryNavbar from './components/CategoryNavbar';
 import CouponNavbar from './components/CouponNavbar';
 import AuthContext from './Context/AuthContext'
 import Home from './components/Home'
+import CheckoutForm from './components/CheckoutForm'
 import Admin from './components/Admin'
 import UserAuth from './userAuth/UserAuth'
 import Sale from './components/Sale'

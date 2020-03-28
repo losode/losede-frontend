@@ -18,11 +18,7 @@ class SubMainNavbar extends React.Component{
         <li>mens</li>
         <li>health & beauty</li>
       </ul>
-<<<<<<< HEAD
-     { /*<span onClick={displaySideMenu} className="pl-3 hamburger hide-big pb-4"><Icon type="menu" /></span>*/}
-=======
       {/* <span onClick={displaySideMenu} className="pl-3 hamburger hide-big pb-4"><Icon type="menu" /></span> */}
->>>>>>> c7fe23600172b9b9560bdfd8e94ef611e1ecbe39
       <div className="mobile-menu-display">
         <span className="float-right font-weight-bold">X</span>
       </div>
