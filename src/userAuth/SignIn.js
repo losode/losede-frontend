@@ -98,7 +98,7 @@ render(){
            <div className="d-flex  justify-content-center signButton">
            {this.state.email !=='' && this.state.password.length >= 6 &&<button className='btn btn-primary'>Login</button>}
            </div>
-            {/* <h5>OR</h5>
+        {/* <h5>OR</h5>
            <p><Link to ='/facebook'>facebook login</Link> &nbsp;&nbsp;<Link to ='/google'>google login</Link></p> */}
           </form>
         </div>

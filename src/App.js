@@ -3,6 +3,7 @@ import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './SCSS/App.scss';
 import './SCSS/responsiveness.scss'
+import CheckoutForm from './CheckoutForm'
 import SellerDashboard from './Seller/SellerDashboard'
 import CustomerDashboard from'./Customers/CustomerDashboard'
 import MainNavbar from './components/MainNavbar';
@@ -189,9 +190,10 @@ class App extends React.Component{
                <Route path = '/customer/dashboard' component ={CustomerDashboard}/>
                <Route path ='/cart' component ={Cart}/>
                <Route path ='/customer/dashboard/orders' component ={MyOrders}/>
-               <Route path ='/customer/dashboard/returns' component ={MyReturns}/>
+               <Route path ='/customer/dashboard/returns' npm icomponent ={MyReturns}/>
                <Route path ='/customer/dashboard/help' component ={CustomerHelp}/>
                <Route path='/aboutlosode' component={AboutLosode}/>
+               <Route path ='/customer/checkout' component ={CheckoutForm}/>
              </Switch>
         </Router>
         </AuthContext.Provider>
